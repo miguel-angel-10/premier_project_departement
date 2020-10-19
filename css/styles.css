@@ -1,0 +1,401 @@
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+li {
+  list-style: none;
+}
+.hamburger-bg {
+  visibility: hidden;
+}
+
+/* background element with the bg pic */
+.nav-bg {
+  height: 90vh;
+  background-image: url("../images/seine-et-marne.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 18vh;
+  background-color: rgb(21, 153, 153);
+  opacity: .8;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+.logo {
+  color: rgb(7, 7, 102);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 5rem;
+  z-index: 1;
+}
+
+.link-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  list-style: none;
+  text-decoration: none;
+  margin: 0 3.5rem;
+}
+
+.link a {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(247, 248, 252);
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.link a:hover {
+  border-bottom: 2.5px solid white;
+}
+
+.slogan {
+  /* background-color: whitesmoke; */
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 31%;
+  top: 10rem;
+  font-size: 5rem;
+  transform: skew(-20deg);
+  text-shadow:0 0 8px rgb(104, 101, 101) ;
+}
+
+main {
+  margin: 3rem 9rem;
+}
+
+.histoire {
+  margin-top: 10rem;
+}
+.article-box {
+  width: 50%;
+}
+.title-description {
+  font-size: 2rem;
+  padding-top: 0;
+  margin-top: 1rem;
+}
+.histoire-description {
+  display: flex;
+  justify-content: space-between;
+}
+.description {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.relative-links {
+  display: flex;
+  justify-content: space-between;  
+  list-style: none;
+}
+.relative-link a {
+  text-decoration: none;
+  color: rgb(180, 94, 94);
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 14px;
+}
+figure {
+  box-shadow: 0 -5px 20px rgb(83, 81, 81);
+}
+figcaption {
+  font-size: 13px;
+}
+.img-palace {
+  width: 100%;
+  box-shadow: 0 5px 10px rgb(230, 224, 224);
+}
+/* footer section elements */
+footer {
+  padding: 30px;
+  background-color: rgb(226, 224, 224);
+  margin-top: 8rem;
+  height: 25vh;
+  text-align: center;
+}
+
+.footer-links {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.footer-link a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(74, 112, 182);
+}
+.dev {
+  margin-top: 2rem;
+  color: grey;
+}
+.author {
+  text-decoration: none;
+  
+}
+.github-link {
+  text-decoration: none;
+}
+.relative-link a:hover {
+  box-shadow: 0 0 5px rgb(122, 122, 122);
+  transition: .3s;
+}
+.footer-link a:hover {
+  color: whitesmoke;
+  transition: .3s;
+}
+
+/*  RESPONSIVE BREAK POINTS */
+
+
+/*  CELL PHONE BREAK POINT */
+@media screen and (max-width: 768px){
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+    height: 7vh;
+    background-color: rgb(21, 153, 153);
+    opacity: .8;
+    position: sticky;
+    top: 0;
+  }
+  .nav-bg {
+    height:30vh;
+    background-image: url("../images/seine-et-marne.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .logo {
+    color: rgb(7, 7, 102);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3rem;
+    z-index: 1;
+  }
+  .link {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 2rem;
+  }
+  
+  .link a {
+    width: 80%;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(247, 248, 252);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-transform: capitalize;
+  }
+
+  .slogan {
+    /* background-color: whitesmoke; */
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    top: 5rem;
+    font-size: 2rem;
+    transform: skew(-20deg);
+    text-shadow:0 0 8px rgb(104, 101, 101) ;
+  }
+  .histoire {
+    margin-top: 3rem;
+  }
+  .histoire-description {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+  .article-box {
+    width: 100%;
+  }
+  main {
+    margin: 3rem 3rem;
+  }
+  footer {
+    padding: 30px;
+    background-color: rgb(226, 224, 224);
+    margin-top: 4rem;
+    height: 10vh;
+    text-align: center;
+  }
+
+}
+  
+
+@media screen and (max-width: 360px){
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* overflow: hidden; */
+    height: 7vh;
+    background-color: rgb(21, 153, 153);
+    opacity: .8;
+    position: sticky;
+    top: 0;
+  }
+  .nav-bg {
+    background-image: url("../images/seine-et-marne.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .logo {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: rgb(7, 7, 102);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    /* z-index: 1; */
+  }
+  .link-list {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    margin:0 0;
+  }
+  .link {
+    list-style: none;
+    text-decoration: none;
+    width: 8rem;
+    margin: 0;
+  }
+  .link  a{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(37, 37, 37, 0.6);
+    visibility: hidden;
+    text-decoration: none;
+    padding: 5px 0;
+    color: rgb(233, 230, 88);
+    font-size: .8rem;
+    font-family: sans-serif;
+    text-transform: capitalize;
+  }
+  .link a:active {
+    font-weight: 800;
+    background-color: rgba(161, 158, 158, 0.6);
+  }
+  .slogan {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 5rem;
+    font-size: 1.4rem;
+    transform: skew(-20deg);
+    text-shadow:0 0 8px rgb(104, 101, 101) ;
+  }
+  .relative-links {
+    display: none;
+  }
+  main {
+    margin: 3rem .3rem;
+  }
+  .article-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .description {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .img-palace {
+    width: 100%;
+  }
+  footer {
+    /* padding: 30px 5px 0 30px; */
+    background-color: rgb(226, 224, 224);
+    margin-top: 2rem;
+    height: 30vh;
+    /* text-align: center; */
+  }
+  .footer-links {
+    /* width: 100%; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+  }
+  .footer-link {
+   margin: 5px 0;
+  }
+
+ }
+
+ /*  */
+.hamburger-bg::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 8px;
+  right: 15px;
+  background-color:  rgba(37, 37, 37, 0.6);
+  border-radius: 45px;
+  cursor: pointer;
+}
+.line1::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  border-top: 2px solid white;
+  top: 20px;
+  right: 23px;
+}
+.line2::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  border-top: 2px solid white;
+  top: 25px;
+  right: 23px;
+}
+.line3::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  border-top: 2px solid white;
+  top: 30px;
+  right: 23px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

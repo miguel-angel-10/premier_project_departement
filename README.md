@@ -14,7 +14,7 @@
     Logo
     Slogan
     Menu pour accéder aux autres pages du site
-    Un résumé de l’histoire du département
+    *  Un résumé de l’histoire du département *
     Un petit texte sur sa situation géographique avec une image pour le situer sur une carte de France
     Un petit résumé sur son climat
     Quatre images pour mettre en avant le département. 
@@ -38,7 +38,7 @@
       -Le nom du marché
        -L’adresse
       -Les horaires et jours d’ouvertures
-  -Et une image (Vous pouvez prendre des images fictives d’un marché)
+      -Et une image (Vous pouvez prendre des images fictives d’un marché)
 
  
 ### Contenu de la page ‘Actualités’

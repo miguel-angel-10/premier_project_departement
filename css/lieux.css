@@ -5,6 +5,9 @@ body, html, div, img {
   padding: 0;
   box-sizing: border-box;
 }
+main {
+  margin-top: 40rem;
+}
 section {
   width: 100%;
 }

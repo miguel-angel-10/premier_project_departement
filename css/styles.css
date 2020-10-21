@@ -511,8 +511,10 @@ footer {
   }
 
  }
+ 
+ /*
+ @media screen and (max-width:  365px){
 
-/* nav toggle button */
 .navigation-checkbox {
   display: none;
 }
@@ -540,43 +542,78 @@ footer {
   z-index: 1000;
   transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 }
- 
-/* .hamburger-bg::before {
-  content: "";
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  top: 8px;
-  right: 15px;
-  background-color:  rgba(37, 37, 37, 0.6);
-  border-radius: 45px;
-  cursor: pointer;
+ .navo {
+   height: 10vh;
+   width: 0;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 1500;
+   background-color:rgba(21, 153, 153, .8);
+   transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+ .list {
+   position: absolute;
+   top: 3rem;
+   right: 0;
+   text-align: center;
+ }
+ .item {
+   margin: .5rem;
+ }
+.mobile-link:link {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: .2rem;
+  color: white;
+  background-size: 50%;
+  transition: all .3s
 }
-.line1::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  border-top: 2px solid white;
-  top: 20px;
-  right: 23px;
+.mobile-link:visited{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: .5rem;
+  color: white;
+  background-size: 50%;
+  
 }
-.line2::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  border-top: 2px solid white;
-  top: 25px;
-  right: 23px;
+.navigation-checkbox:checked, .navigation-background:checked {
+  opacity: 1;
+  width: 50%;
+  display: inline-block;
 }
-.line3::before {
+.navigation-icon {
+  position: relative;
+}
+.navigation-icon::before {
   content: "";
   position: absolute;
-  width: 20px;
-  border-top: 2px solid white;
-  top: 30px;
-  right: 23px;
-} */
- 
+  width: 1.5rem;
+  height: 2px;
+  background-color: grey;
+  display: inline-block;
+  top: 10px;
+  right: -10px;
+  transition: all .3s;
+}
+.navigation-icon::after {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 2px;
+  background-color: grey;
+  top: 15px;
+  right: -10px;
+  transition: all .3s;
+}
+ }
+ */
+
+
+
+
 
 
 

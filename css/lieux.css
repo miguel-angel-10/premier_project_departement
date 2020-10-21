@@ -3,32 +3,42 @@
 body, html, div, img {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 section {
   width: 100%;
 }
 
-main {
-  margin-top: 80vh;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap; */
-}
-
-.img-container {
+.pictures {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1rem;
+  margin: 1rem auto;
+}
+figure {
+  width: 25rem;
+  margin: 0 auto;
+}
+figure  img{
+  width: 25rem;
 }
 
 .img-container img{
-  width: 20rem;
-  margin: 2rem;
+  width: 25rem;
+  margin: 2rem auto;
 }
 
-
+@media screen and (max-width: 768px){
+  main {
+    margin-top: 16rem;
+  }
+  .pictures figure img {
+    width: 100%;
+  }
+  figure {
+    margin: 1rem auto;
+    width: 100%;
+  }
+}
 
 
 

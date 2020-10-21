@@ -514,107 +514,46 @@ footer {
   }
 
  }
- 
- /*
- @media screen and (max-width:  365px){
-
-.navigation-checkbox {
-  display: none;
-}
-.navigation-button {
-  background-color: white;
-  height: 2rem;
-  width: 2rem;
-  position: fixed;
-  top: 1rem;
-  right: 1.5rem;
-  border-radius: 50%;
-  z-index: 2000;
-  box-shadow: rgba(37, 37, 37, 0.1);
-  text-align: center;
-  cursor: pointer;
-}
-.navigation-background {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 1rem;
-  right: 1.5rem;
-  background-image: radial-gradient(rgb(152, 152, 189), rgb(167, 160, 160));
-  z-index: 1000;
-  transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-}
- .navo {
-   height: 10vh;
-   width: 0;
-   position: fixed;
-   top: 0;
-   right: 0;
-   z-index: 1500;
-   background-color:rgba(21, 153, 153, .8);
-   transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
- }
- .list {
-   position: absolute;
-   top: 3rem;
-   right: 0;
-   text-align: center;
- }
- .item {
-   margin: .5rem;
- }
-.mobile-link:link {
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 300;
-  padding: .2rem;
-  color: white;
-  background-size: 50%;
-  transition: all .3s
-}
-.mobile-link:visited{
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 300;
-  padding: .5rem;
-  color: white;
-  background-size: 50%;
-  
-}
-.navigation-checkbox:checked, .navigation-background:checked {
-  opacity: 1;
-  width: 50%;
-  display: inline-block;
-}
-.navigation-icon {
-  position: relative;
-}
-.navigation-icon::before {
-  content: "";
-  position: absolute;
-  width: 1.5rem;
-  height: 2px;
-  background-color: grey;
-  display: inline-block;
-  top: 10px;
-  right: -10px;
-  transition: all .3s;
-}
-.navigation-icon::after {
-  content: "";
-  position: absolute;
-  width: 1.5rem;
-  height: 2px;
-  background-color: grey;
-  top: 15px;
-  right: -10px;
-  transition: all .3s;
-}
- }
- */
 
 
+ @media screen and ( max-width: 360px) {
+
+  /* hide checkbox */
+  #nav-toggle {
+    visibility: hidden;
+  }
+  /*  hambuerguer menu */
+  label,
+  label::before,
+  label::after {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background: #fff;
+    transition: .6s;
+    -webkit-transition: .6s;
+  }
+  label {
+    cursor: pointer;
+    top: 15px;
+    left: 50px;
+    /* right: 10px; */
+    /* right: 2rem; */
+    margin-left: 50px;
+    margin-top: 7px;
+  }
+  label::before {
+    content: "";
+    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+  }
+  label::after {
+    content: "";
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+  }
+ }
 
 
 
